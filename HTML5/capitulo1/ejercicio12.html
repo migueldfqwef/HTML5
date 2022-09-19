@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Fig 2.14: formularui .html-->
+<!-- Formulario de un ccampo de texto y campos ocultos.-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <button><a href="/index.html">regresar al menu</a></button>
+
+    <h1>Formulario de retroalimentaci&oacute;n</h1>
+
+    <p>Llene este formulario para ayudarnos
+        a mejorar nuestro sitio.</p>
+
+        <!-- esta etiqueta empieza el formulario, indica el-->
+        <!--metodo de enviar informacion y la ubicacion-->
+        <!--de la secuencia  de los comandos  de procesamiento  del formulario -->
+        <form method = "post" action = "http://www.deitel.com">
+        <!-- las entradas ocultas contienen informacion -->
+        <!-- no visual que tambien se enviara-->
+        <input type = "hidden" name = "destinatario" 
+            value =  "deitel@deitel.com">
+        <input type = "hidden" name = "asunto"
+            value = "Formulario de retroalimentaci&oacute;n">
+        <input type = "hiden" name = "redirigir"
+             value = " principal.html">
+
+        <!-- <input type = "text > inserta un ampo de texto"-->
+        <p><label>Nombre:
+            <input name = "nombre " type = "text" size = "25"
+                  maxlength = "30">
+        </label></p>
+        <p>
+
+            <!-- los tipos de entrada  "sudmint" y "reset" insertan-->
+            <!-- botones para enviar y borrar el contenido-->
+            <!-- del formulariio. respectivamente-->
+
+            <input type = "submit" value = "enviar">
+            <input type = "reset value" value = "borrar">
+        </p>
+    </form>
+
+
+</body>
+</html>
